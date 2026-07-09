@@ -1,155 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-01</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
     <!-- NavBar Start -->
     <header class="container">
-        <nav>
-            <div class="nav-logo">
-                    <img src="./image/assets/logo.png" alt="DevConf 2026">
-
-            </div>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="#">Speakers</a></li>
-                    <li><a href="#">Schedule</a></li>
-                    <li><a href="#">Tracks</a></li>
-                    <li><a href="#">Venue</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="nav-btn">
-                <button class="btn">Register Now</button>
-            </div>
-        </nav>
+      <nav>
+        <div class="nav-logo">
+          <img src="./image/assets/logo.png" alt="DevConf 2026" />
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Tracks</a></li>
+            <li><a href="#">Venue</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="nav-btn">
+          <button class="btn">Register Now</button>
+        </div>
+      </nav>
     </header>
     <!-- NavBar End -->
 
     <main>
-
-        <!-- Hero Section Start -->
-        <section>
-            <div class="hero-bg">
-            <div class="container hero-inner">
+      <!-- Hero Section Start -->
+      <section>
+        <div class="hero-bg">
+          <div class="container hero-inner">
             <div class="hero">
-                <h1>Code. Connect. Create</h1>
-                <p>Join 4,000+ engineers, founders, and builders at the premier developer conference of 2026. Three days of cutting-edge talks, hands-on workshops, and meaningful connections.</p>
-                <button class="btn">Resister Now</button>
+              <h1>Code. Connect. Create</h1>
+              <p>
+                Join 4,000+ engineers, founders, and builders at the premier
+                developer conference of 2026. Three days of cutting-edge talks,
+                hands-on workshops, and meaningful connections.
+              </p>
+              <button class="btn">Resister Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- Speakers Section Start -->
+
+      <section class="speakers-section container">
+        <!-- Here I have faced a problem, After I think But I can done this section with display flex. But I want to use grid, then I use gpt and said How I create this layout using grid     then I have done! -->
+
+        <h1>Meet the Speakers</h1>
+        <div class="speakers">
+          <div class="speakers-card">
+            <img src="./image/assets/andrej.png" alt="andrej" />
+            <p class="color">AL/ML</p>
+            <h3>Andrej Karpathy</h3>
+            <p class="designation">Pretraining team, Anthropic</p>
+          </div>
+          <div class="speakers-card">
+            <img src="./image/assets/demis.png" alt="andrej" />
+            <p class="color">CLOUD & DEVOPS</p>
+            <h3>Demis Hassabis</h3>
+            <p class="designation">Co-Founder and CEO, google DeepMind</p>
+          </div>
+          <div class="speakers-card">
+            <img src="./image/assets/gary.png" alt="andrej" />
+            <p class="color">FRONTEND</p>
+            <h3>Gary Marcus</h3>
+            <p class="designation">Staff Engineer, Vercel</p>
+          </div>
+          <div class="speakers-card">
+            <img src="./image/assets/mustafa.png" alt="andrej" />
+            <p class="color">SECURITY</p>
+            <h3>Mustafa Suleyman</h3>
+            <p class="designation">CEO of Microsoft AI</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Speakers Section End -->
+
+      <!-- Card Section Start -->
+
+      <section>
+        <div class="container card-parent-text">
+          <h2>Secure Your Spot</h2>
+          <p class="card-upur-content">
+            Early-bird pricing ends August 15, 2026.
+          </p>
+          <div class="card-parent">
+            <div class="card">
+              <p class="c1">STANDARD</p>
+              <h3>$399</h3>
+              <p class="c2">per person</p>
+
+              <ul>
+                <li>Access to all 3 conference days</li>
+                <li>48 curated technical talks</li>
+                <li>2 workshop sessions</li>
+                <li>Networking lunch & coffee breaks</li>
+                <li>Conference swag bag</li>
+                <li>Digital recordings (30 days)</li>
+              </ul>
+              <button class="btn">Get Standard</button>
+            </div>
+            <div class="card2">
+              <p class="color c1">PRO</p>
+              <h3>$399</h3>
+              <p class="c2">per person</p>
+
+              <ul>
+                <li>Access to all 3 conference days</li>
+                <li>48 curated technical talks</li>
+                <li>2 workshop sessions</li>
+                <li>Networking lunch & coffee breaks</li>
+                <li>Conference swag bag</li>
+                <li>Digital recordings (30 days)</li>
+              </ul>
+              <button class="btn">Get Pro</button>
+            </div>
+            <div class="card3">
+              <p class="c1">STANDARD</p>
+              <h3>$399</h3>
+              <p class="c2">per person</p>
+
+              <ul>
+                <li>Access to all 3 conference days</li>
+                <li>48 curated technical talks</li>
+                <li>2 workshop sessions</li>
+                <li>Networking lunch & coffee breaks</li>
+                <li>Conference swag bag</li>
+                <li>Digital recordings (30 days)</li>
+              </ul>
+              <button class="">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Section End -->
+
+      <!-- AI Section Start -->
+
+      <section class="sponsors">
+        <div class="sponsors__eyebrow">Sponsors</div>
+        <h2 class="sponsors__title">Backed by teams building the future</h2>
+        <p class="sponsors__subtitle">
+          DevConf 2026 is made possible by the companies investing in the
+          developer community.
+        </p>
+
+        <div class="sponsor-tier">
+          <div class="sponsor-tier__label">Platinum</div>
+          <div class="sponsor-grid--platinum">
+            <div class="sponsor-card">Anthropic</div>
+            <div class="sponsor-card">Google DeepMind</div>
+            <div class="sponsor-card">Microsoft AI</div>
+          </div>
+        </div>
+
+        <div class="sponsor-tier">
+          <div class="sponsor-tier__label">Gold</div>
+          <div class="sponsor-grid--gold">
+            <div class="sponsor-card">Vercel</div>
+            <div class="sponsor-card">Stripe</div>
+            <div class="sponsor-card">GitHub</div>
+            <div class="sponsor-card">Notion</div>
+          </div>
+        </div>
+
+        <div class="sponsor-tier">
+          <div class="sponsor-tier__label">Community Partners</div>
+          <div class="sponsor-grid--community">
+            <div class="sponsor-card">Devpost</div>
+            <div class="sponsor-card">Hashnode</div>
+            <div class="sponsor-card">Dev.to</div>
+            <div class="sponsor-card">freeCodeCamp</div>
+          </div>
+        </div>
+
+        <div class="sponsors__cta">
+          <p>Interested in sponsoring DevConf 2026?</p>
+          <a href="#contact">Become a Sponsor</a>
+        </div>
+      </section>
+
+
+      <!-- AI section End -->
+
+
+      <footer>
+        <div class="footer-section">
+            <div class="f-logo container">
+                <div class="f-logo-left">
+                    <img src="./image/assets/logo-mini.png" alt="Footer-logo">
+                    <span>DEVCONF 2026</span>
+                </div>
+                <div class="f-icon-right">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
         </div>
-        </div>
-        </section>
-        <!-- Hero Section End -->
-
-        <!-- Speakers Section Start -->
-
-        <section class="speakers-section container">
-
-            <!-- Here I have faced a problem, After I think But I can done this section with display flex. But I want to use grid, then I use gpt and said How I create this layout using grid     then I have done! -->
-
-            <h1>Meet the Speakers</h1>
-            <div class="speakers">
-                <div class="speakers-card">
-                    <img src="./image/assets/andrej.png" alt="andrej">
-                    <p class="color">AL/ML</p>
-                    <h3>Andrej Karpathy</h3>
-                    <p class="designation">Pretraining team, Anthropic</p>
-                </div>
-                <div class="speakers-card">
-                    <img src="./image/assets/demis.png" alt="andrej">
-                    <p class="color">CLOUD & DEVOPS</p>
-                    <h3>Demis Hassabis</h3>
-                    <p class="designation">Co-Founder and CEO, google DeepMind</p>
-                </div>
-                <div class="speakers-card">
-                    <img src="./image/assets/gary.png" alt="andrej">
-                    <p class="color">FRONTEND</p>
-                    <h3>Gary Marcus</h3>
-                    <p class="designation">Staff Engineer, Vercel</p>
-                </div>
-                <div class="speakers-card">
-                    <img src="./image/assets/mustafa.png" alt="andrej">
-                    <p class="color">SECURITY</p>
-                    <h3>Mustafa Suleyman</h3>
-                    <p class="designation">CEO of Microsoft AI</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Speakers Section End -->
-
-        <!-- Card Section Start -->
-
-        <section>
-            <div class="container card-parent-text">
-                <h2>Secure Your Spot</h2>
-                    <p class="card-upur-content">Early-bird pricing ends August 15, 2026.</p>
-                <div class="card-parent">
-                    
-                    <div class="card">
-                        <p class="c1">STANDARD</p>
-                        <h3>$399</h3>
-                        <p class="c2">per person</p>
-
-                        <ul>
-                            <li>Access to all 3 conference days</li>
-                            <li>48 curated technical talks</li>
-                            <li>2 workshop sessions</li>
-                            <li>Networking lunch & coffee breaks</li>
-                            <li>Conference swag bag</li>
-                            <li>Digital recordings (30 days)</li>
-                        </ul>
-                        <button class="btn">Get Standard</button>
-                    </div>
-                    <div class="card2">
-                        <p class="color c1">PRO</p>
-                        <h3>$399</h3>
-                        <p class="c2">per person</p>
-
-                        <ul>
-                            <li>Access to all 3 conference days</li>
-                            <li>48 curated technical talks</li>
-                            <li>2 workshop sessions</li>
-                            <li>Networking lunch & coffee breaks</li>
-                            <li>Conference swag bag</li>
-                            <li>Digital recordings (30 days)</li>
-                        </ul>
-                        <button class="btn">Get Pro</button>
-                    </div>
-                    <div class="card3">
-                        <p class="c1">STANDARD</p>
-                        <h3>$399</h3>
-                        <p class="c2">per person</p>
-
-                        <ul>
-                            <li>Access to all 3 conference days</li>
-                            <li>48 curated technical talks</li>
-                            <li>2 workshop sessions</li>
-                            <li>Networking lunch & coffee breaks</li>
-                            <li>Conference swag bag</li>
-                            <li>Digital recordings (30 days)</li>
-                        </ul>
-                        <button class="">Contact Us</button>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Card Section End -->
-
-
-
-
-
+        <div class="footer-copy"></div>
+        
+      </footer>
     </main>
-</body>
+  </body>
 </html>
