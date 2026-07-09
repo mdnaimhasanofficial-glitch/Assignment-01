@@ -446,7 +446,6 @@ background: #1d4ed8;
 /*  AI Section Style end */
 
 .footer-section{
-    height: 100px;
     background-color: #0D1B2A;
 
 }
@@ -468,8 +467,29 @@ background: #1d4ed8;
     color: #575757;
 }
 .f-icon-right{
+    display: flex;
+    gap: 10px;
 }
 .f-icon-right i{
     font-size: 40px;
     color: white;
+}
+
+/* Footer Logo end */
+
+/* Footer Text */
+.footer-copy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+}
+.footer-copy {
+    color: #575757;
+}
+.copy-text{
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
