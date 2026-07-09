@@ -25,7 +25,12 @@
     color: #1D4ED8;
     transition: .3s;
 }
-
+.color{
+    color: #1D4ED8;
+}
+img{
+    max-width: 100%;
+}
 /* Common CSS End */
 
 /* NavBar Design Start*/
@@ -70,7 +75,7 @@ nav ul li a{
 }
 .hero{
     text-align: center;
-    width:35%;
+    width:40%;
     margin: auto;
 }
 .hero h1{
@@ -89,3 +94,46 @@ nav ul li a{
 }
 
 /* Hero Style End */
+
+/* Speakers Section Start */
+.speakers{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+.speakers-section{
+    padding: 100px 0;
+}
+.speakers-section h1{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 4rem;
+}
+.speakers-card{
+    border: 1px solid #88868650;
+    border-radius: 10px;
+    display: grid;
+    gap: 15px;
+}
+.speakers-card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.speakers-card h3{
+    font-size: 2rem;
+    margin-left: 10px;
+}
+.speakers-card p{
+    margin-left: 10px;
+}
+.speakers-card .designation{
+    font-size: 1.2rem;
+    color: #575757;
+    padding: 10px 0;
+
+}
+
+/* Speakers Section End */
+
