@@ -1,0 +1,89 @@
+/* Reset CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Common CSS Start*/
+.container{
+    width: 90%;
+    margin: auto;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #1D4ED8;
+    color: white;
+    border: 1px solid transparent;
+    font-size: 1rem;
+
+}
+.btn:hover{
+    background-color: #fff;
+    border: 1px solid #1D4ED8;
+    color: #1D4ED8;
+    transition: .3s;
+}
+
+/* Common CSS End */
+
+/* NavBar Design Start*/
+
+.nav-bg{
+    background-color: #ffffff;
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #575757;
+
+}
+/* NavBar Design End */
+
+/* Hero Section Start */
+.hero-bg{
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./image/assets/banner.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+.hero-inner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.hero{
+    text-align: center;
+    width:35%;
+    margin: auto;
+}
+.hero h1{
+    color: white;
+    font-size: 4rem;
+    padding: 20px 0;
+}
+.hero p{
+    color: rgba(170, 166, 166, 0.973);
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+.hero button{
+    font-size: 2rem;
+    margin-top: 250px;
+}
